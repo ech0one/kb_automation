@@ -34,7 +34,7 @@ for file in os.listdir(fileDir):
             f.write(columnK)
             f2.write("%s,%s,%s\n" % (columnL, columnM, columnN))
             i += 1
-        print("---HTML(s): COMPLETE\n---CSV:     COMPLETE")
+        print("---%d HTML(s): COMPLETE\n---CSV:     COMPLETE" % i-1)
         f.close()
         f2.close()
 print("\nDone with files in: ", fileDir)
